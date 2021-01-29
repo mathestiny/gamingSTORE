@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('Title')
-Home
+
 @section('content')
 
 <section class="py-5">

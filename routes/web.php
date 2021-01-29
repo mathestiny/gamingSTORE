@@ -7,8 +7,6 @@ use Illuminate\Support\Facades\Route;
 
 /* routage pour les produits */
 
-Route::get('/shop/{slug}', 'App\Http\Cotrollers\ProductController@show')->name('products.show');
-Route::get('/shop', 'App\Http\Cotrollers\ProductController@index')->name('products.index');
 
 
 Route::get('/' , 'App\Http\Controllers\PagesController@index');
@@ -19,11 +17,10 @@ Route::resource('/blogs', BlogController::class);
 
 
 Route::post('userUpdate', 'HomeController@userUpdate');
-Route::get('/users/{id}', function($id) {
-    return 'This is a user' . $id;
-});
+
 
 Auth::routes();
+Route::get('/game' , 'App\Http\Controllers\PagesController@game');
 Route::get('/games' , 'App\Http\Controllers\PagesController@games');
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::resource('posts', 'App\Http\Controllers\PostsController');

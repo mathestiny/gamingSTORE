@@ -29,4 +29,5 @@ class PagesController extends Controller
         return view('pages.games')->with('title', $title);
     }
     
+    
 }

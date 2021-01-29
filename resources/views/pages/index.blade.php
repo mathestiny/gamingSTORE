@@ -2,7 +2,7 @@
 
 
 @section('title')
-    Laravel Shopping Cart
+    GamingSTORE
 @endsection
 
 @section('content')
@@ -17,9 +17,9 @@
       <script src="https://embed.twitch.tv/embed/v1.js"></script>  
       <script type="text/javascript">
         new Twitch.Embed("twitch-embed", {
-          width: 800,
-          height: 500,
-          channel: "teevycorp",
+          width: 1200,
+          height: 900,
+          channel: "lck",
          
         });
       </script>
